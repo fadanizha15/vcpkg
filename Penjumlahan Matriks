@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int i, j, b, k, matr1[10][10],matr2[10][10],hasil[10][10];
+	cout<<"PENJUMLAHAN MATRIKS\n\n";
+	cout<<"Masukan jumlah baris : ";cin>>b;
+	cout<<"Masukan jumlah kolom : ";cin>>k;
+	cout<<"Masukan nilai matriks pertama : \n";
+	for (i=0; i<b; i++)
+	{
+		for (j=0; j<k; j++)
+		{
+			cin>>matr1[i][j];
+		}
+	}
+	cout<<"Masukan nilai matriks ke dua : \n";
+	for (i=0; i<b; i++)
+	{
+		for (j=0; j<k; j++)
+		{
+			cin>>matr2[i][j];
+		}
+	}
+	cout<<"Hasil matriksnya adalah \n";
+	for (i=0; i<b; i++)
+	{
+		for (j=0; j<k; j++)
+		{
+			hasil[i][j] = matr1[i][j] + matr2[i][j];
+			cout<<hasil[i][j]<<"\t";
+		}
+		cout<<endl;
+	}
+}
