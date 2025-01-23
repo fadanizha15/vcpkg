@@ -10,6 +10,10 @@ with open('model_uas.pkl', 'rb') as model_file:
 # Judul aplikasi
 st.title("Prediksi Biaya Asuransi")
 
+# Header tambahan
+st.header("Informasi Pengguna")
+user_name = st.text_input("Mochammad Fadlan Izha Mayori - 2019230124", "")
+
 # Input dari pengguna
 age = st.number_input("Umur", min_value=0, max_value=120, value=27)
 sex = st.selectbox("Jenis Kelamin (0: Female, 1: Male)", options=[0, 1])
